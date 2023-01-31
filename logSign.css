@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+body{
+    height: 90vh;
+    width: 100%;
+    justify-content: center;
+    background-image: url(img/lock.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: soft-light;
+}
+.container{
+    height: 10vh;
+    width: 40vh;
+    margin: 15% auto;
+}
+    .form-box{
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        height: 40vh;
+        width: 40vh;
+        margin: auto;
+        background-color: rgb(206, 203, 203);
+        box-shadow: 1px 1px 5px cyan, 2px 2px 10px white;
+        position: absolute;
+    }
+
+    .heading{
+        color: white;
+        position: relative;
+        top: 1vh;
+        text-shadow: 0px 0px 0px white, 1px 1px 5px cyan;   
+    }
+
+    #loginField input{
+        height: 5vh;
+        width: 30vh;
+        border: 0;
+        border-radius: 10px;
+        text-align: center;
+        font-weight: 600;
+    }
+        #loginField #username{
+            margin-top: 30px;
+        }
+        #loginField #password{
+            position: relative;
+            bottom: 1vh;
+        }
+        #loginField #loginBtn,#create{
+            position: relative;
+            bottom: 2vh;
+        }
+        #loginField p{
+            height: 30px;
+            width: 150px;
+            margin: 0 auto;
+            color: whitesmoke;
+            padding-top: 5px;
+            border-radius: 3px;
+            background-color: rgb(75, 75, 248)
+        }
+        #loginField a{
+            font-size: small;
+            font-weight: 700;
+            text-decoration: none;
+        }
+            #loginField #link:hover{
+                transition: 0.2s;
+                background-color: rgb(219, 70, 219);
+            }
+
+    #signupField input{
+        padding: 10px 30px;
+        margin: 2px auto;
+        width: 30vh;
+        border: 0;
+        border-radius: 10px;
+        text-align: center;
+        font-weight: 600;
+    }
+
+        #signupField #signUsername,#signEmail,#signPassword,#signPassword2{
+            margin-top: 4vh;
+        }
+        #signupField #finishBtn{
+        margin: 10px 50px;
+        }
+
+        .form-box input:hover{
+            background-color: antiquewhite;
+            transition: 0.3s;
+        }
+
+    .form-box .button{
+        font-size: 15px;
+        font-weight: 600;
+        margin: 5px auto;
+        height: 4vh;
+        width: 30vh;
+        border: 0;
+        color: white;
+        border-radius: 5px;
+        background: rgb(175, 7, 175);
+    }
+        .form-box .button:hover{
+            background: rgb(245, 7, 245);
+            transition: 0.3s;
+        }
+    .form-box small{
+        font-size: 13px;
+        font-weight: 600;
+        align-items: center;
+    }
+
+    .form-box small a{
+        text-decoration: none;
+        color: white;
+    } 
+
+    .form-box small a:hover{
+        color: blue;
+    }
+
+    @media only screen and (max-width:320px){
+        body{
+            height: 100vh;
+        }
+        .form-box{
+            height: 40vh;
+            width: 320px;
+            margin-top: 15vh;
+        }
+        .form-box #finishBtn{
+            position: relative;
+            right: 3vh;
+        }
+    }

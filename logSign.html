@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log'N'Sign</title>
+    <link rel="stylesheet" href="logSign.css">
+</head>
+<body>
+    <form>
+        <div class="container" id="container">
+            <!-- Sign up field -->
+            <div class="form-box" id="signupField">
+                <h1 class="heading">Sign up</h1>
+                <input type="text" placeholder="Username" id="signUsername">
+                <input type="email" placeholder="Email" id="signEmail">
+                <input type="password" placeholder="Your Password" id="signPassword">
+                <input type="password" placeholder="Confirm password" id="signPassword2">
+                <button class="button" id="finishBtn">Finish</button>
+                <small id="already">Already have an Account? <a href="#" id="haveLogin">Login</a></small>
+            </div>
+
+            <!-- Login field -->
+            <div class="form-box" id="loginField">
+                <h1 class="heading">Login</h1>
+                <input type="text" placeholder="Username" id="username">
+                <input type="password" placeholder="Password" id="password">
+                <button class="button" id="loginBtn">Login</button>
+                <small id="create">Create an account <a href="#" id="clickHere">Click Here</a></small>
+                <p id="link"><a href="https://www.facebook.com">Facebook</a></p><p id="link"><a href="https://www.twitter.com">Twitter</a></p>
+            </div>
+        </div>
+    </form>
+    <script src="logSign.js"></script>
+</body>
+</html>
